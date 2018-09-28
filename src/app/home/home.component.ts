@@ -11,10 +11,16 @@ export class HomeComponent implements OnInit {
 
   like = false;
 
-  onClick(item){
-    
+  onClick(item) {
+
     this.like = true;
-    const perfil = this.perfils.splice(item, 1);
+
+    setTimeout(() => {
+      this.like = false;
+      const perfil = this.perfils.splice(item, 1);
+    }, 2000);
+
+    
     console.log(this.perfils);
   }
 

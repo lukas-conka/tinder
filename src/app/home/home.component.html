@@ -2,7 +2,7 @@
     <div class="roll-in-blurred-left" *ngFor="let perfil of perfils | slice:0:1; let i=index">
         <img src="assets/imgs/fotos/{{perfil}}.jpg" alt="">
     </div>
-    <span class="like">LIKE</span>
+    <span *ngIf="like" class="like">LIKE</span>
 </div>
 <button (click)="onClick(i)">Like</button>
 <button>Negative</button>
