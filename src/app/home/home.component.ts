@@ -9,8 +9,11 @@ export class HomeComponent implements OnInit {
 
   perfils = ['foto1', 'foto2', 'foto3'];
 
+  like = false;
+
   onClick(item){
     
+    this.like = true;
     const perfil = this.perfils.splice(item, 1);
     console.log(this.perfils);
   }
