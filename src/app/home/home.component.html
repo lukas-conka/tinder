@@ -1,9 +1,7 @@
 <div class="foto">
-    <div *ngFor="let perfil of perfils | slice:0:1; let i=index">
+    <div class="roll-in-blurred-left" *ngFor="let perfil of perfils | slice:0:1; let i=index">
         <img src="assets/imgs/fotos/{{perfil}}.jpg" alt="">
-
     </div>
-
 </div>
 <button (click)="onClick(i)">Like</button>
 <button>Negative</button>
